@@ -1,22 +1,46 @@
 * { box-sizing: border-box; }
 img { max-width: 100%; position: relative;}
 
-body {background-color: pink;}
+body {
+  background-color: white;
+}
 
-#main-wraper {width: 90%; margin: 0 auto; background-color: white;}
+#main-wraper {
+  width: 70%;
+  margin: 0 auto;
+}
 
-header {
+/*header {
     background-color: #00daff;
     color: #fff;
     padding: 1rem;
     text-align: center;
+}*/
+
+header {
+  background-color: #00daff;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
-header p { color: white; font-size: 40px; padding-top: 20px; margin: 0; font-family: fantasy;
+header img {
+  width:10%;
+  float:left;
+}
+
+header p {
+  color: white;
+  font-size: 40px;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  margin: 0;
+  font-family: arial;
   font-weight:bold;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 0.75px;}
+  -webkit-text-stroke-width: 1px;
+}
 
 header:after {
     content: "";
@@ -25,27 +49,188 @@ header:after {
 }
 
 nav {
-    background-color: #f9f9f9;
-    padding: 0.5rem;
-    text-align: center;
+  padding-left: 25px;
+  background-color: #4d4d33;
+  z-index: 1000;
 }
 
-nav a {
-    color: #00daff;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4d4d33;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    margin: 0 1rem;
+}
+
+li a:hover:not(.active) {
+    background-color: #00daff;
 }
 
 section {
-    padding: 2rem;
+  background-color: blue;
 }
 
-footer {
-    background-color: #00daff;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+#izquierda {
+  width: 50%;
+  float: left;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin:0px auto;
+
+}
+
+#izquierda p {
+text-align: justify;
+
+}
+
+#derecha {
+  width: 50%;
+  float: right;
+  margin:0px auto;
+}
+
+#derecha img {
+  width:50%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix { clear: both; } */
+
+.footer-basic {
+  padding:40px 0;
+  background-color: blue;
+  color:white;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:#00daff;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #00daff;
+  margin:0 8px;
+  color:#00daff;
+  opacity:0.5;
+}
+
+.footer-basic .social > a:hover {
+  opacity:1;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:15px;
+  color:#00daff;
+  margin-bottom:0;
+}
+
+.mi-boton {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /*El ancho se adapta al tamaño de pantalla*/
+    max-width: 300px; /*Tamaño máximo del botón*/
+}
+
+h2 {
+
+color: #00daff;
+font-family: Helvetica;
+font-weight:bold;
+}
+
+p {
+  color: #6c757d;
+  font-family: Helvetica;s
+}
+
+
+/* CSS */
+.button-81 {
+  background-color: #00daff;
+  border: 0 solid white;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-81:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
 }

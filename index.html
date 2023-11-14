@@ -1,34 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-
-  <meta charset="UTF-8">
-  <title>Castellers de Santa Coloma de Gramenet</title>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <title>Castellers de Santa Coloma de Gramenet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
 
   <body>
-      <div id=main-wraper>
-        <header w3-include-html="header.html"></header>
+        <header w3-include-html="header.html">
+
+          <img src="images/logo.png">
+          			<!-- <p> Castellers de
+                <br>Santa Coloma de Gramenet</p> -->
+        </header>
+
+          <div class="clearfix"></div>
+
+          <!-- <nav w3-include-html="horizontal-menu.html" id="navbar" >
+            <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#news">Eventos</a></li>
+            </ul>
+          </nav> -->
+
+        <div class="clearfix"></div>
+
+        <section>
+
+          <div id="izquierda">
+
+            <h2>Historia de los Castellers de Santa Coloma de Gramenet</h2>
+            <p>Los Castellers de Santa Coloma de Gramenet son una colla castellera que tiene sus raíces en la tradición catalana de construir torres humanas. Fundada en el año 1985, nuestra colla ha participado en numerosos eventos y ha construido castells de diferentes alturas y complejidades.</p>
+            <p>Desde nuestros inicios, nos hemos dedicado a preservar y promover esta rica tradición cultural. A lo largo de los años, hemos participado en festivales, competiciones y eventos comunitarios, llevando nuestra pasión por los castells a audiencias locales e internacionales.</p>
+            <p>Con el esfuerzo y la dedicación de nuestros castellers, así como el apoyo de nuestra comunidad, hemos logrado construir castells impresionantes y mantener viva esta tradición ancestral. Únete a nosotros en nuestra emocionante jornada mientras continuamos desafiando los límites de lo que es posible con los castells.</p>
+
+            <br>
+
+            <h2>¡Unete a nosotros!</h2>
+            <p>C/ Nosecual, 11</p>
+            <p>08921 Santa Coloma de Gramenet</p>
+            <p>Tel: +34 935 890 432</p>
+            <p>Correo: castillos@santako.com</p>
+            <a href="https://www.google.com/maps/place/Castellers+de+Santa+Coloma/@41.4538481,2.2069845,15z/data=!4m2!3m1!1s0x0:0xcd35d39d1ef453ce?sa=X&ved=2ahUKEwimhbDCpMOCAxWwUaQEHT5_BBYQ_BJ6BAhJEAA"><button class="button-81" role="button">VER</button></a>
+
+          </div>
+
+          <div id="derecha">
+            <img src="images/inicio.jpg">
+            </div>
+
+        </section>
+
+        <div class="clearfix"></div>
+
+        <div class="footer-basic">
+
+          <footer>
+
+            <div class="social">
+
+              <a href="https://www.instagram.com/castellersdesantacoloma/?hl=es"><i class="icon ion-social-instagram"></i></a>
+              <a href="https://twitter.com/cdesantacoloma"><i class="icon ion-social-twitter"></i></a>
+              <a href="https://www.facebook.com/castellerssantacoloma/?locale=es_ES"><i class="icon ion-social-facebook"></i></a>
+              <p class="copyright">Castellers de Santa Coloma de Gramenet. Todos los derechos reservados © 2023</p>
+
+            </div>
+
+          </footer>
+
+        </div>
 
         <script>
-          window.onscroll = function() {myFunction()};
+        window.onscroll = function() {myFunction()};
 
-          var navbar = document.getElementById("navbar");
-          var sticky = navbar.offsetTop;
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
 
-          function myFunction() {
-            if (window.pageYOffset >= sticky) {
-              navbar.classList.add("sticky")
-            } else {
-              navbar.classList.remove("sticky");
-            }
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
           }
+        }
         </script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
         <script>
           w3.includeHTML();
         </script>
-      </div>
 
-  </body>
+      </body>
 </html>
